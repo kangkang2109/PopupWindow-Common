@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/popup"
+        android:gravity="center"
+        android:layout_width="70dp"
+        android:text="Magic"
+        android:layout_centerInParent="true"
+        android:layout_height="70dp" >
+    </Button>
+
+    <LinearLayout
+        android:layout_above="@+id/horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:hint="xoffset"/>
+
+        <EditText
+            android:id="@+id/y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:hint="yoffset"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/horizontal"
+        android:layout_above="@+id/vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="left"/>
+        <CheckBox
+            android:id="@+id/center_hor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center_hor"/>
+        <CheckBox
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="right"/>
+        <CheckBox
+            android:id="@+id/clip_hor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ClipHFlag"/>
+        <CheckBox
+            android:id="@+id/clip_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ClipVFlag"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="top"/>
+        <CheckBox
+            android:id="@+id/center_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center_vertical"/>
+        <CheckBox
+            android:id="@+id/bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bottom"/>
+        <CheckBox
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center"/>
+        <CheckBox
+            android:id="@+id/anchor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anchor"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
